@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PwnKit on malware.boutique</title>
+    <link>http://localhost:1313/tags/pwnkit/</link>
+    <description>Recent content in PwnKit on malware.boutique</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/pwnkit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CVE-2021-4034 Exploit</title>
+      <link>http://localhost:1313/posts/pwnkit/</link>
+      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pwnkit/</guid>
+      <description>Root exploit for the PwnKit vulnerability. Check out the original report here .&#xA;Use this exploit with an express permission of the target system owners.&#xA;Building No dependencies needed besides libc. Just run make.&#xA;Running Running without options will execute the exploit:&#xA;[linux@linux ~]$ ./exploit ----------------------------------------------------------------------------- __\ / __ __ _ __ _ __ | \ / _ ___ / V |_ --- _)/ \ _)/| ---|_|/ \__)|_| | V |_) _/|_| \__ |__ /__\_//__ | |\_/__) | | | \/__| | ----------------------------------------------------------------------------- sh-5.</description>
+    </item>
+  </channel>
+</rss>

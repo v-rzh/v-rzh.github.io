@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virus on malware.boutique</title>
+    <link>http://localhost:1313/tags/virus/</link>
+    <description>Recent content in Virus on malware.boutique</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/virus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In search of the auxiliary vector</title>
+      <link>http://localhost:1313/posts/auxvector/</link>
+      <pubDate>Fri, 28 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/auxvector/</guid>
+      <description>This article and supporting repository present a naive but effective method of scanning the stack for the auxiliary vector.&#xA;Background The order of first several auxiliary vector entries as defined in the linux kernel source (create_elf_tables() in fs/binfmt_fs.c) has not changed since v2.6.12 (3a93e40326c8f470e71d20b4c42d36767450f38f last time I checked):&#xA;NEW_AUX_ENT(AT_HWCAP, ELF_HWCAP); NEW_AUX_ENT(AT_PAGESZ, ELF_EXEC_PAGESIZE); NEW_AUX_ENT(AT_CLKTCK, CLOCKS_PER_SEC); NEW_AUX_ENT(AT_PHDR, phdr_addr); NEW_AUX_ENT(AT_PHENT, sizeof(struct elf_phdr)); NEW_AUX_ENT(AT_PHNUM, exec-&amp;gt;e_phnum); NEW_AUX_ENT(AT_BASE, interp_load_addr); if (bprm-&amp;gt;interp_flags &amp;amp; BINPRM_FLAGS_PRESERVE_ARGV0) flags |= AT_FLAGS_PRESERVE_ARGV0; NEW_AUX_ENT(AT_FLAGS, flags); NEW_AUX_ENT(AT_ENTRY, e_entry); NEW_AUX_ENT(AT_UID, from_kuid_munged(cred-&amp;gt;user_ns, cred-&amp;gt;uid)); NEW_AUX_ENT(AT_EUID, from_kuid_munged(cred-&amp;gt;user_ns, cred-&amp;gt;euid)); NEW_AUX_ENT(AT_GID, from_kgid_munged(cred-&amp;gt;user_ns, cred-&amp;gt;gid)); NEW_AUX_ENT(AT_EGID, from_kgid_munged(cred-&amp;gt;user_ns, cred-&amp;gt;egid)); NEW_AUX_ENT(AT_SECURE, bprm-&amp;gt;secureexec); That means that a predictable order of struct aux_entry_64 id values can be found somewhere on the stack.</description>
+    </item>
+  </channel>
+</rss>

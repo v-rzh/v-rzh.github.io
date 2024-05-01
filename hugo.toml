@@ -1,0 +1,7 @@
+baseURL = 'https://v-rzh.github.io'
+languageCode = 'en-us'
+title = 'malware.boutique'
+theme = 'dead-simple'
+
+[markup.highlight]
+style = 'tango'
