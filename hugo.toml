@@ -1,7 +1,32 @@
-baseURL = 'https://v-rzh.github.io'
+baseURL = 'https://malware.boutique'
 languageCode = 'en-us'
 title = 'malware.boutique'
 theme = 'dead-simple'
+enableGitInfo = true
+
+[params]
+description = "Blog about malware and computer security."
 
 [markup.highlight]
 style = 'tango'
+
+[[menu.main]]
+name = "<u>H</u>ome"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "<u>P</u>osts"
+url = "/posts"
+weight = 1
+[[menu.main]]
+name = "<u>P</u>ublished Work"
+url = "/published"
+weight = 2
+[[menu.main]]
+name = "<u>G</u>itHub"
+url = "https://github.com/v-rzh"
+weight = 3
+[[menu.main]]
+name = "<u>T</u>ags"
+url = "/tags"
+weight = 4

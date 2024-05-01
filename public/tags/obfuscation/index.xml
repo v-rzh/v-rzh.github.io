@@ -6,14 +6,14 @@
     <description>Recent content in Obfuscation on malware.boutique</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 May 2024 05:59:36 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/obfuscation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Malware Review]: Mofongo Loader</title>
       <link>http://localhost:1313/posts/mofongo/</link>
       <pubDate>Mon, 29 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/mofongo/</guid>
-      <description>Rather doing vanilla malware write ups, I&amp;rsquo;d like to introduce a different format - malware review. I&amp;rsquo;m going to rate the malware based around loose categories with an emphasis on how fun it was to reverse. The scoring will be biased, arbitrary, and unfair. Let&amp;rsquo;s go!&#xA;Discovery If you wish to follow along, the sample hash is e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2.&#xA;I ran into this sample completely by chance. As I was submitting logs for a recent amateur radio contest (not kidding) my browser was redirected to a malicious page, masquerading as CloudFlare verification.</description>
+      <description>Rather than doing vanilla malware write ups, I&amp;rsquo;d like to introduce a different format - malware review. I&amp;rsquo;m going to rate the malware based around loose categories with an emphasis on how fun it was to reverse. The scoring will be biased, arbitrary, and unfair. Let&amp;rsquo;s go!&#xA;Discovery If you wish to follow along, the sample hash is e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2.&#xA;I ran into this sample completely by chance. As I was submitting logs for a recent amateur radio contest (not kidding) my browser was redirected to what appeared to be a knockoff Cloudflare verification page.</description>
     </item>
   </channel>
 </rss>
