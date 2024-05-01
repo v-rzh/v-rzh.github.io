@@ -197,11 +197,11 @@ uint8_t exploit[EXPLOIT_LEN] = {
 ```
 
 First 24 bytes are the filler for the stack - recall that the function subtracts
-`0x10` from the stack pointer and pops a register. The first two gadets are the XOR
+`0x10` from the stack pointer and pops a register. The first two gadgets are the XOR
 gadgets we've determined with `permute.py`. The next gadget pops `0x19` into `rdx`,
 which is the length of our read. Finally, we shove the `read` syscall number into
 `rax` and call it. Then we simply use the gadgets to load the `write` syscall number
-and place stdout file decriptor (`1`) as its first argument. The other two arguments
+and place stdout file descriptor (`1`) as its first argument. The other two arguments
 in registers `rsi` and `rdx` remain the same throughout the exploit. That's it!
 
 ```

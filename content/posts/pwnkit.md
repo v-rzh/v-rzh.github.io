@@ -126,7 +126,7 @@ __add_to_environ (const char *name, const char *value, const char *combined,
 
 `__add_to_environ` is called by both `setenv(3)` and `putenv(3)` to accomplish
 the same thing: set an environment variable. If the environment variable in
-question is **not** defined, `environ` has to be reallocated to accomodate
+question is **not** defined, `environ` has to be reallocated to accommodate
 a new entry (a pointer to the new environment `key=value` pair). If it is
 defined, the size of the `environ` array has not changed and thus there is no
 reason for reallocation. For brevity I've omitted that part of the code - I

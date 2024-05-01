@@ -18,12 +18,12 @@ If you wish to follow along, the sample hash is
 
 I ran into this sample completely by chance. As I was submitting logs for a
 recent amateur radio contest (not kidding) my browser was redirected to what
-appeared to be an knockoff Cloudflare verification page. The page encouraged
+appeared to be a knockoff Cloudflare verification page. The page encouraged
 me to run an executable program in order to "verify" myself before proceeding
 to my original destination. It even downloaded the sample for me - how could I
-say no! The program name was `VERIFICATION.exe`. In its eariler versions it
+say no! The program name was `VERIFICATION.exe`. In its earlier versions it
 even came with a Cloudflare icon, but more recent samples sport a generic green
-checkmark icon. As far as delivery methods are concerned it's pretty lame, but
+check mark icon. As far as delivery methods are concerned it's pretty lame, but
 the fact that I found it in the wild is definitely worth some points. `6/10`
 
 ## Obfuscation
@@ -49,7 +49,7 @@ that buffers store the decrypted strings not based on their content, but rather
 their length. So if two different strings of the same length need to be decrypted,
 the latest plaintext will clobber the previous. This actually happens several
 times. It's *weird* and mildly annoying, but ultimately not effective. A little
-binja scripting goas a long way here.
+binja scripting goes a long way here.
 
 {{< box important>}}
 Thank God DLL and function name lengths are rarely the same!
