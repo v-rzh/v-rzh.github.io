@@ -36,8 +36,8 @@ The loader uses a number of classic obfuscation and evasion techniques,
 however they are not consistently applied and mostly fall flat. For instance,
 most WinAPI functions in this loader are called indirectly, but calls to
 `LoadLibrary` and `GetProcAddress` are direct (for example @ `0x140013c68`).
-The author does use PEB walking to find `kernell.dll` in memory and resolve
-`QueryFullProcessImageNameW` (`0x140013bd4`). Unfortunately both `kernell.dll`
+The author does use PEB walking to find `kernel.dll` in memory and resolve
+`QueryFullProcessImageNameW` (`0x140013bd4`). Unfortunately both `kernel.dll`
 and `QueryFullProcessImageNameW` strings are decrypted and passed as arguments
 to the PEB walking and DLL parsing procedures respectively, telegraphing what's
 going on.
