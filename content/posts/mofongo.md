@@ -12,13 +12,13 @@ biased, arbitrary, and unfair. Let's go!
 
 ## Discovery
 {{< box info >}}
-If you wish to follow along, the sample hash is
-`e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2` |
+If you wish to follow along, here are some links |
 [VT](https://www.virustotal.com/gui/file/e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2) | 
 [VXUG](https://virus.exchange/samples/21263571) |
 [MWDB](https://mwdb.cert.pl/file/e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2) |
 [MalwareBazaar](https://bazaar.abuse.ch/sample/e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2/) |
 
+`SHA256: e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2`
 {{< /box >}}
 
 I ran into this sample completely by chance. As I was submitting logs for a
@@ -37,7 +37,7 @@ however they are not consistently applied and mostly fall flat. For instance,
 most WinAPI functions in this loader are called indirectly, but calls to
 `LoadLibrary` and `GetProcAddress` are direct (for example @ `0x140013c68`).
 The author does use PEB walking to find `kernel.dll` in memory and resolve
-`QueryFullProcessImageNameW` (`0x140013bd4`). Unfortunately both `kernel.dll`
+`QueryFullProcessImageNameW` (`0x140013bd4`). Unfortunately, both `kernel.dll`
 and `QueryFullProcessImageNameW` strings are decrypted and passed as arguments
 to the PEB walking and DLL parsing procedures respectively, telegraphing what's
 going on.
@@ -48,7 +48,7 @@ one for ASCII strings - another for wide char strings.
 
 ![img](/xor_decryption_0.png)
 
-These two functions are wrapped in a multitude of routines with hardcoded
+These two functions are wrapped in a multitude of routines with static
 global addresses for the plaintext and hardcoded plaintext lengths. This means
 that buffers store the decrypted strings not based on their content, but rather
 their length. So if two different strings of the same length need to be decrypted,
@@ -114,9 +114,9 @@ likely expects an ASCII string. It doesn't appear to be used anywhere else in
 the loader, so it's unclear whether this is an unfinished feature or simply a
 way to track payload's progress.
 
-So what's the payload? Well, unfortunately it looks like the most recent domain
+So what's the payload? Well, unfortunately, it looks like the most recent domain
 is no longer serving the second stage, at least in response to any of my attempts.
-Perhaps I'm too late and it's already shot down, or perhaps the ironic "SUCCESS"
+Perhaps I'm too late and it's already shut down, or perhaps the ironic "SUCCESS"
 reply is a troll. I hope the latter, because that's way funnier. Some claim
 that the second stage steals Chrome-related data, but so far I was not able to
 verify that. If anyone has the dump of the second stage - I'd love to take a
