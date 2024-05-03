@@ -13,7 +13,12 @@ biased, arbitrary, and unfair. Let's go!
 ## Discovery
 {{< box info >}}
 If you wish to follow along, the sample hash is
-`e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2`.
+`e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2` |
+[VT](https://www.virustotal.com/gui/file/e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2) | 
+[VXUG](https://virus.exchange/samples/21263571) |
+[MWDB](https://mwdb.cert.pl/file/e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2) |
+[MalwareBazaar](https://bazaar.abuse.ch/sample/e9007c7bd6be14d6364b91e1fd7b03043dffe8a405eca5cc6dc809762bd31ba2/) |
+
 {{< /box >}}
 
 I ran into this sample completely by chance. As I was submitting logs for a
