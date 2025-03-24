@@ -8,4 +8,4 @@ notitle: true
 * [tmp.out #3](https://tmpout.sh/3)| [Linux.ElizaCanFix.asm](https://tmpout.sh/3/Linux.ElizaCanFix.asm)
 * [tmp.out #4](https://tmpout.sh/4)| [sl^tmachine: metamorphic AARCH64 ELF virus](https://tmpout.sh/4/7.html)
 * [tmp.out #4](https://tmpout.sh/4)| [Linux.Slotmachine.s](https://tmpout.sh/4/Linux.Slotmachine.s)
-* [tmp.out:#4](https://tmpout.sh/4)| Analysis of Linux.Slotmachine by qkumba: [DO I FEEL LUCKY? Linux/Slotmachine](https://tmpout.sh/4/6.html)
+* [tmp.out #4](https://tmpout.sh/4)| Analysis of Linux.Slotmachine by qkumba: [DO I FEEL LUCKY? Linux/Slotmachine](https://tmpout.sh/4/6.html)
